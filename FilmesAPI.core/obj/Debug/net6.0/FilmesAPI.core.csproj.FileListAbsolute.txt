@@ -1,0 +1,12 @@
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\bin\Debug\net6.0\FilmesAPI.core.deps.json
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\bin\Debug\net6.0\FilmesAPI.core.dll
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\bin\Debug\net6.0\FilmesAPI.core.pdb
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.csproj.AssemblyReference.cache
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.AssemblyInfoInputs.cache
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.AssemblyInfo.cs
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.csproj.CoreCompileInputs.cache
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.dll
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\refint\FilmesAPI.core.dll
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\FilmesAPI.core.pdb
+C:\Users\jvieira\Documents\projetos\csharp\APIs em .NET\API REST Operanções Essenciais com verbos HTTP\FilmesAPI\FilmesAPI.core\obj\Debug\net6.0\ref\FilmesAPI.core.dll
