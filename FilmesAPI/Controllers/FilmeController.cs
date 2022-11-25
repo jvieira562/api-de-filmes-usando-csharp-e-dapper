@@ -1,6 +1,5 @@
 ﻿using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
 
 namespace FilmesAPI.Controllers
 {
