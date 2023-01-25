@@ -1,0 +1,12 @@
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\bin\Debug\net6.0\FilmesAPI.Models.deps.json
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\bin\Debug\net6.0\FilmesAPI.Models.dll
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\bin\Debug\net6.0\FilmesAPI.Models.pdb
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.csproj.AssemblyReference.cache
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.AssemblyInfoInputs.cache
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.AssemblyInfo.cs
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.csproj.CoreCompileInputs.cache
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.dll
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\refint\FilmesAPI.Models.dll
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\FilmesAPI.Models.pdb
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.Models\obj\Debug\net6.0\ref\FilmesAPI.Models.dll

@@ -1,4 +1,5 @@
-﻿using FilmesAPI.Models;
+﻿using FilmesAPI.Dtos.FilmeDtos;
+using FilmesAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesAPI.Controllers
@@ -7,42 +8,56 @@ namespace FilmesAPI.Controllers
     [Route("[controller]")]
     public class FilmeController : ControllerBase
     {
-        private static List<Filme> filmes = new List<Filme>();
-        private static int _Id = 1;
+        private readonly FilmeService _filmeService;
+
+        public FilmeController(FilmeService filmeService)
+        {
+            _filmeService = filmeService;
+        }
 
         [HttpPost]
-        public IActionResult  AdicionaFilme([FromBody] Filme filme)
+        public IActionResult AdicionarFilme([FromBody] CreateFilmeDto filmeDto)
         {
-
-            if (!string.IsNullOrEmpty(filme.Diretor))
-            {
-                filme.Id = _Id++;
-                filmes.Add(filme);
-                filme.ToString();
-                return CreatedAtAction(nameof(pergarFilmeAtravesDoId), new { Id = filme.Id }, filme);
-            }
-            else
-            {
-                Console.WriteLine("FILME NÃO É VALIDO!");
-                return BadRequest();
-            }
-
+            if (!ModelState.IsValid) return BadRequest("Filme invalido.");
+            
+            _filmeService.SalvarFilme(filmeDto);            
+            return NoContent();                     
         }
+
         [HttpGet]
         public IActionResult BuscarFilmes()
         {
-            return Ok(filmes);
+            return Ok(_filmeService.BuscarFilmes());
         }
-        [HttpGet("{id}")]
-        public IActionResult pergarFilmeAtravesDoId(int id)
+
+        [HttpGet("{cod_Filme}")]
+        public IActionResult BuscarFilme(int cod_Filme)
         {
-       
-            Filme filme =  filmes.FirstOrDefault(filme => filme.Id == id);
-            if(filme != null)
-            {
-                return Ok(filme);
-            }
+            ReadFilmeDto filmeDto = _filmeService.BuscarFilme(cod_Filme);
+            if (filmeDto != null) return Ok(filmeDto);
+            
             return NotFound("Filme não encontrado.");
+        }
+
+        [HttpDelete("{cod_Filme}")]
+        public IActionResult ExcluirFilme(int cod_Filme)
+        {
+            string status = _filmeService.ExcluirFilme(cod_Filme);
+            if (String.IsNullOrEmpty(status))
+            {
+                return NoContent();
+            }
+
+            return NotFound(status);
+        }
+        [HttpPut("{cod_Filme}")]
+        public IActionResult AtualizarFilme(int cod_Filme, [FromBody] UpdateFilmeDto filmeDto)
+        {
+            string status = _filmeService.AtualizarFilme(cod_Filme, filmeDto);
+
+            if(String.IsNullOrEmpty(status)) return NoContent();
+            
+            return BadRequest(status);
         }
     }
 }

@@ -1,20 +1,42 @@
+using EnderecosAPI.Services.Interfaces;
+using FilmesAPI.data.DataBaseConnection;
+using FilmesAPI.data.Repository;
+using FilmesAPI.data.Repository.Interfaces;
+using FilmesAPI.data.UnitOfWork;
+using FilmesAPI.Data.Repository;
+using FilmesAPI.Data.Repository.Interfaces;
+using FilmesAPI.Data.Repository.ReadRepository;
+using FilmesAPI.Data.Repository.ReadRepository.Interfaces;
+using FilmesAPI.Data.UnitOfWork.Interfaces;
+using FilmesAPI.Services;
+using FilmesAPI.Services.Interfaces;
+using GerentesAPI.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
+
+/* DATA DI*/
+builder.Services.AddScoped<DbSession>();
+builder.Services.AddTransient<UnitOfWork, UnitOfWorkImpl>();
+builder.Services.AddTransient<FilmeRepository, FilmeRepositoryImpl>();
+builder.Services.AddTransient<CinemaRepository, CinemaRepositoryImpl>();
+builder.Services.AddTransient<EnderecoRepository, EnderecoRepositoryImpl>();
+builder.Services.AddTransient<GerenteRepository, GerenteRepositoryImpl>();
+builder.Services.AddTransient<SessaoRepository, SessaoRepositoryImpl>();
+/*SERVICE DI*/
+builder.Services.AddTransient<FilmeService, FilmeServiceImpl>();
+builder.Services.AddTransient<GerenteService, GerenteServiceImpl>();
+builder.Services.AddTransient<EnderecoService, EnderecoServiceImpl>();
+builder.Services.AddTransient<CinemaService, CinemaServiceImpl>();
+builder.Services.AddTransient<SessaoService, SessaoServiceImpl>();
+/*SERVICE READ DI*/
+builder.Services.AddTransient<ReadSessaoRepository, ReadSessaoRepositoryImpl>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    //app.UseSwagger();
-   // app.UseSwaggerUI();
-}
 
 app.UseHttpsRedirection();
 

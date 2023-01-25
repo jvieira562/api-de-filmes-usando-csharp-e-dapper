@@ -1,20 +1,209 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jvieira\\Documents\\projetos\\csharp\\APIs em .NET\\API REST Operanções Essenciais com verbos HTTP\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {}
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI\\FilmesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jvieira\\Documents\\projetos\\csharp\\APIs em .NET\\API REST Operanções Essenciais com verbos HTTP\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj": {
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jvieira\\Documents\\projetos\\csharp\\APIs em .NET\\API REST Operanções Essenciais com verbos HTTP\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
-        "projectName": "FilmesAPI",
-        "projectPath": "C:\\Users\\jvieira\\Documents\\projetos\\csharp\\APIs em .NET\\API REST Operanções Essenciais com verbos HTTP\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
-        "packagesPath": "C:\\Users\\jvieira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jvieira\\Documents\\projetos\\csharp\\APIs em .NET\\API REST Operanções Essenciais com verbos HTTP\\FilmesAPI\\FilmesAPI\\obj\\",
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj",
+        "projectName": "FilmesAPI.Models",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jvieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj",
+        "projectName": "FilmesAPI.Data",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj"
+              },
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj"
+              },
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj",
+        "projectName": "FilmesAPI.Dtos",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj",
+        "projectName": "FilmesAPI.Models",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\FilmesAPI.Models.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,11 +229,138 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "Correios.NET": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[1.4.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
+        "projectName": "FilmesAPI.Services",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj"
+              },
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI\\FilmesAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI\\FilmesAPI.csproj",
+        "projectName": "FilmesAPI",
+        "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI\\FilmesAPI.csproj",
+        "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj": {
+                "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -64,7 +380,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
