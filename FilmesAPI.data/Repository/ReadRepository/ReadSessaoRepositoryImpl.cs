@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using FilmesAPI.data.DataBaseConnection;
 using FilmesAPI.Data.Repository.ReadRepository.Interfaces;
-using FilmesAPI.Dtos.CinemaDtos;
 using FilmesAPI.Dtos.SessaoDtos;
 using FilmesAPI.Models;
 
