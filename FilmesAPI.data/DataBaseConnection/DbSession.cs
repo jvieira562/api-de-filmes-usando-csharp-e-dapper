@@ -1,5 +1,4 @@
-﻿using FilmesAPI.Data.DataBaseConnection;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace FilmesAPI.data.DataBaseConnection
@@ -12,7 +11,7 @@ namespace FilmesAPI.data.DataBaseConnection
 
         public DbSession()
         {
-            Connection = new SqlConnection(ConnectionStringDB.EnderecoDaBase);
+            Connection = new SqlConnection("Data Source=JV0001; Initial Catalog=FilmesAPI; Integrated Security=True;");
             Connection.Open();
         }
         public void Dispose()
