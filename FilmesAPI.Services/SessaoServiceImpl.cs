@@ -41,16 +41,16 @@ namespace FilmesAPI.Services
             return mensagem;
         }
 
-        public ReadSessaoDto BuscarSessao(int cod_Sessao)
+        public ReadSessaoDtoImpl BuscarSessao(int cod_Sessao)
         {
             var sessaoDto = _readSessaoRepository.BuscarSessao(cod_Sessao);
 
             return sessaoDto;
         }
 
-        public IEnumerable<ReadSessaoDto> BuscarSessoes()
+        public IEnumerable<ReadSessaoDtoImpl> BuscarSessoes()
         {
-            IEnumerable<ReadSessaoDto> sessoesDto = _mapper.Map<List<ReadSessaoDto>>(_sessaoRepository.BuscarSessoes());
+            IEnumerable<ReadSessaoDtoImpl> sessoesDto = _mapper.Map<List<ReadSessaoDtoImpl>>(_sessaoRepository.BuscarSessoes());
 
             return sessoesDto;
         }

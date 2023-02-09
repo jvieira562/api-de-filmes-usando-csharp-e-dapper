@@ -21,8 +21,4 @@
     <ProjectReference Include="..\FilmesAPI.Models\FilmesAPI.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="AbstractFactory\" />
-  </ItemGroup>
-
 </Project>
