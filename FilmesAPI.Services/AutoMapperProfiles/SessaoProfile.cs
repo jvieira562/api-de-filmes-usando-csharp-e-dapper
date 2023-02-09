@@ -9,9 +9,9 @@ namespace FilmesAPI.Services.AutoMapperProfiles
     {
         public SessaoProfile()
         {
-            CreateMap<CreateSessaoDto, Sessao>();
+            CreateMap<CreateSessaoDtoImpl, Sessao>();
             CreateMap<UpdateSessaoDto, Sessao>();
-            CreateMap<Sessao, ReadSessaoDto>();
+            CreateMap<Sessao, ReadSessaoDtoImpl>();
             CreateMap<Sessao, CinemaSessaoDto>();
         }
     }

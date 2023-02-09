@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using FilmesAPI.data.DataBaseConnection;
+using FilmesAPI.Data.Factories.SessaoFactory;
 using FilmesAPI.Data.Repository.ReadRepository.Interfaces;
 using FilmesAPI.Dtos.SessaoDtos;
 using FilmesAPI.Models;
@@ -9,11 +10,13 @@ namespace FilmesAPI.Data.Repository.ReadRepository
     public class ReadSessaoRepositoryImpl : ReadSessaoRepository
     {
         private readonly DbSession _session;
-        public ReadSessaoRepositoryImpl(DbSession session)
+        private readonly SessaoAbstractFactory _sessaoFactory;
+        public ReadSessaoRepositoryImpl(DbSession session, SessaoAbstractFactory sessaoFactory)
         {
             _session = session;
+            _sessaoFactory = sessaoFactory;
         }
-        public ReadSessaoDto BuscarSessao(int cod_Sessao)
+        public ReadSessaoDtoImpl BuscarSessao(int cod_Sessao)
         {
             string sql =
                 @"SELECT s.*,
@@ -32,18 +35,19 @@ namespace FilmesAPI.Data.Repository.ReadRepository
                 INNER JOIN [Filme] AS f ON s.Cod_Filme = f.Cod_Filme
                 WHERE s.Cod_Sessao = @Cod_Sessao;";
 
-            var sessaoDto = _session.Connection.Query<Sessao, Cinema, Endereco, Gerente, Filme, ReadSessaoDto>(
+            var sessaoDto = _session.Connection.Query<Sessao, Cinema, Endereco, Gerente, Filme, ReadSessaoDtoImpl>(
                 sql : sql,
                 map : (sessao, cinema, endereco, gerente, filme) =>
                 {
-                    
-                    return null;
+                    var sessaoCinema = _sessaoFactory.CreateSessaoCinemaDto(cinema, endereco, gerente);
+                    var readCinemaDto = _sessaoFactory.CreateReadSessaoDto(sessao, sessaoCinema, filme);
+                    return readCinemaDto;
                 },
                 param : new { Cod_Sessao = cod_Sessao },
                 splitOn : "Cut").FirstOrDefault();
 
-            return null;
-        }public IEnumerable<ReadSessaoDto> BuscarSessoes(int cod_Sessao)
+            return sessaoDto;
+        }public IEnumerable<ReadSessaoDtoImpl> BuscarSessoes(int cod_Sessao)
         {
             string sql =
                 @"SELECT *
@@ -58,12 +62,12 @@ namespace FilmesAPI.Data.Repository.ReadRepository
                 ON f.Cod_Filme = s.Cod_Filme
                 WHERE Cod_Sessao = @Cod_Sessao;";
 
-            var sessaoDto = _session.Connection.Query<ReadSessaoDto, Sessao, Cinema, Endereco, Gerente, Filme, ReadSessaoDto>(
+            var sessaoDto = _session.Connection.Query<ReadSessaoDtoImpl, Sessao, Cinema, Endereco, Gerente, Filme, ReadSessaoDtoImpl>(
                 sql : sql,
                 map : (readSessao, sessao, cinema, endereco, gerente, filme) =>
                 {
                     readSessao.Filme = filme;
-                    readSessao.Cinema = new SessaoCinemaDto
+                    readSessao.Cinema = new SessaoCinemaDtoImpl
                     {
                         Cod_Cinema = cinema.Cod_Cinema,
                         Nome = cinema.Nome,

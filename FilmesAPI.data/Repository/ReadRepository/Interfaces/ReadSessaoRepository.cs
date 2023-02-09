@@ -4,7 +4,7 @@ namespace FilmesAPI.Data.Repository.ReadRepository.Interfaces
 {
     public interface ReadSessaoRepository
     {
-        public IEnumerable<ReadSessaoDto> BuscarSessoes(int cod_Sessao);
-        public ReadSessaoDto BuscarSessao(int cod_Sessao);
+        public IEnumerable<ReadSessaoDtoImpl> BuscarSessoes(int cod_Sessao);
+        public ReadSessaoDtoImpl BuscarSessao(int cod_Sessao);
     }
 }

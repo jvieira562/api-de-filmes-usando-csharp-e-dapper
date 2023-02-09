@@ -1,11 +1,4 @@
-﻿using FilmesAPI.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FilmesAPI.Dtos.SessaoDtos
+﻿namespace FilmesAPI.Dtos.SessaoDtos
 {
     public class UpdateSessaoDto
     {
