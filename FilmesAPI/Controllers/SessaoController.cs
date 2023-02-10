@@ -15,7 +15,7 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult SalvarCinema([FromBody] CreateSessaoDtoImpl sessaoDto)
+        public IActionResult SalvarCinema([FromBody] CreateSessaoDto sessaoDto)
         {
             if(ModelState.IsValid)
             {

@@ -1,5 +1,4 @@
 ﻿using FilmesAPI.Dtos.SessaoDtos;
-using FilmesAPI.Dtos.SessaoDtos.Interfaces;
 using FilmesAPI.Models;
 
 namespace FilmesAPI.Data.Factories.SessaoFactory

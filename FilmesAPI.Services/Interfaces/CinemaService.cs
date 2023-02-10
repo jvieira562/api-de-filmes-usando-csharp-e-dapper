@@ -1,4 +1,5 @@
 ﻿using FilmesAPI.Dtos.CinemaDtos;
+using FilmesAPI.Dtos.CinemaDtos.Interfaces;
 
 namespace FilmesAPI.Services.Interfaces
 {

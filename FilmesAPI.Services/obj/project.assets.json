@@ -439,7 +439,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj": "1.0.0",
           "Dapper": "2.0.123",
           "FilmesAPI.Dtos": "1.0.0",
           "FilmesAPI.Models": "1.0.0",
@@ -1306,19 +1305,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jvieira\\.nuget\\packages\\": {}
+    "C:\\Users\\conta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
+      "projectUniqueName": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
       "projectName": "FilmesAPI.Services",
-      "projectPath": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
-      "packagesPath": "C:\\Users\\jvieira\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\obj\\",
+      "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\FilmesAPI.Services.csproj",
+      "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jvieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\conta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1332,11 +1331,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj": {
-              "projectPath": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj"
+            "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj": {
+              "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.data\\FilmesAPI.Data.csproj"
             },
-            "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj": {
-              "projectPath": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.DTOs\\FilmesAPI.Dtos.csproj"
+            "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Dtos\\FilmesAPI.Dtos.csproj": {
+              "projectPath": "C:\\Users\\conta\\Documents\\projetos\\csharp\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.Dtos\\FilmesAPI.Dtos.csproj"
             }
           }
         }
@@ -1375,16 +1374,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Repositorios\\Estudos-sobre-APIs-com-.NET\\FilmesAPI.core\\FilmesAPI.Models.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

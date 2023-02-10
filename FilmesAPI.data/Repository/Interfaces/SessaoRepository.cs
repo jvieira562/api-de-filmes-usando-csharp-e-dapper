@@ -1,11 +1,12 @@
-﻿using FilmesAPI.Models;
+﻿using FilmesAPI.Dtos.SessaoDtos.Interfaces;
+using FilmesAPI.Models;
 
 namespace FilmesAPI.Data.Repository.Interfaces
 {
     public interface SessaoRepository
     {
         public void SalvarSessao(Sessao sessao);
-        public Sessao BuscarSessao(int cod_Sessao);
+        public ReadSessaoDto BuscarSessao(int cod_Sessao);
         public IEnumerable<Sessao> BuscarSessoes();
         public void ExcluirSessao(int cod_Sessao);
         public void AtualizarSessao(Sessao sessao);
