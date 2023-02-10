@@ -3,12 +3,9 @@ using FilmesAPI.data.DataBaseConnection;
 using FilmesAPI.data.Repository;
 using FilmesAPI.data.Repository.Interfaces;
 using FilmesAPI.data.UnitOfWork;
-using FilmesAPI.Data.Factories.Sessao;
 using FilmesAPI.Data.Factories.SessaoFactory;
 using FilmesAPI.Data.Repository;
 using FilmesAPI.Data.Repository.Interfaces;
-using FilmesAPI.Data.Repository.ReadRepository;
-using FilmesAPI.Data.Repository.ReadRepository.Interfaces;
 using FilmesAPI.Data.UnitOfWork.Interfaces;
 using FilmesAPI.Dtos.CinemaDtos;
 using FilmesAPI.Dtos.SessaoDtos;
@@ -36,8 +33,6 @@ builder.Services.AddTransient<GerenteService, GerenteServiceImpl>();
 builder.Services.AddTransient<EnderecoService, EnderecoServiceImpl>();
 builder.Services.AddTransient<CinemaService, CinemaServiceImpl>();
 builder.Services.AddTransient<SessaoService, SessaoServiceImpl>();
-/*SERVICE READ DI*/
-builder.Services.AddTransient<ReadSessaoRepository, ReadSessaoRepositoryImpl>();
 /*Dtos interface*/
 builder.Services.AddTransient<SessaoCinemaDto, SessaoCinemaDtoImpl>();
 builder.Services.AddTransient<ReadSessaoDto, ReadSessaoDtoImpl>(); 

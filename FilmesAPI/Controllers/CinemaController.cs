@@ -1,4 +1,5 @@
 ﻿using FilmesAPI.Dtos.CinemaDtos;
+using FilmesAPI.Dtos.CinemaDtos.Interfaces;
 using FilmesAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

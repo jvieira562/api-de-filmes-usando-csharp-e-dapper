@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using FilmesAPI.Data.Repository.Interfaces;
-using FilmesAPI.Data.Repository.ReadRepository.Interfaces;
 using FilmesAPI.Data.UnitOfWork.Interfaces;
 using FilmesAPI.Dtos.SessaoDtos;
 using FilmesAPI.Models;
@@ -13,15 +12,12 @@ namespace FilmesAPI.Services
         private readonly UnitOfWork _uow;
         private readonly IMapper _mapper;
         private readonly SessaoRepository _sessaoRepository;
-        private readonly ReadSessaoRepository _readSessaoRepository;
 
-        public SessaoServiceImpl(UnitOfWork uow, IMapper mapper, SessaoRepository sessaoRepository,
-            ReadSessaoRepository readSessaoRepository)
+        public SessaoServiceImpl(UnitOfWork uow, IMapper mapper, SessaoRepository sessaoRepository)
         {
             _uow = uow;
             _mapper = mapper;
             _sessaoRepository = sessaoRepository;
-            _readSessaoRepository = readSessaoRepository;
         }
 
         public string AtualizarSessao(int cod_Sessao, UpdateSessaoDto sessaoDto)
@@ -43,7 +39,7 @@ namespace FilmesAPI.Services
 
         public ReadSessaoDtoImpl BuscarSessao(int cod_Sessao)
         {
-            var sessaoDto = _readSessaoRepository.BuscarSessao(cod_Sessao);
+            var sessaoDto = _sessaoRepository.BuscarSessao(cod_Sessao);
 
             return sessaoDto;
         }

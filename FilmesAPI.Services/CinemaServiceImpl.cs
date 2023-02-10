@@ -3,6 +3,7 @@ using FilmesAPI.data.Repository.Interfaces;
 using FilmesAPI.Data.Repository.Interfaces;
 using FilmesAPI.Data.UnitOfWork.Interfaces;
 using FilmesAPI.Dtos.CinemaDtos;
+using FilmesAPI.Dtos.CinemaDtos.Interfaces;
 using FilmesAPI.Models;
 using FilmesAPI.Services.Interfaces;
 
@@ -44,17 +45,17 @@ namespace FilmesAPI.Services
 
         public ReadCinemaDto BuscarCinema(int cod_Cinema)
         {
-            Cinema cinema = _cinemaRepository.BuscarCinema(cod_Cinema);
+            var cinema = _cinemaRepository.BuscarCinema(cod_Cinema);
             ReadCinemaDto cinemaDto = _mapper.Map<ReadCinemaDto>(cinema);
-            cinemaDto.Gerente = _gerenteRepository.BuscarGerente(cinema.Cod_Gerente);
+/*            cinemaDto.Gerente = _gerenteRepository.BuscarGerente(cinema.Cod_Gerente);
             cinemaDto.Endereco = _enderecoRepository.BuscarEndereco(cinema.Cod_Endereco);
-            cinemaDto.Sessoes = _mapper.Map<List<CinemaSessaoDto>>(_sessaoRepository.BuscarSessoesNoCinema(cinema.Cod_Cinema));
+            cinemaDto.Sessoes = _mapper.Map<List<CinemaSessaoDto>>(_sessaoRepository.BuscarSessoesNoCinema(cinema.Cod_Cinema));*/
             return cinemaDto;
         }
 
         public IEnumerable<ReadCinemaDto> BuscarCinemas()
         {
-            List<Cinema> cinemas = _cinemaRepository.BuscarCinemas().ToList();
+            var cinemas = _cinemaRepository.BuscarCinemas().ToList();
             IEnumerable<ReadCinemaDto> cinemasDto = new List<ReadCinemaDto>();
             foreach (Cinema cinema in cinemas)
             {

@@ -1,6 +1,8 @@
 ﻿using Dapper;
 using FilmesAPI.data.DataBaseConnection;
 using FilmesAPI.data.Repository.Interfaces;
+using FilmesAPI.Data.Factories.CinemaFactory;
+using FilmesAPI.Dtos.CinemaDtos.Interfaces;
 using FilmesAPI.Models;
 
 namespace FilmesAPI.Data.Repository
@@ -8,9 +10,11 @@ namespace FilmesAPI.Data.Repository
     public class CinemaRepositoryImpl : CinemaRepository
     {
         private readonly DbSession _session;
-        public CinemaRepositoryImpl(DbSession session)
+        private readonly CinemaAbstractFactory _cinemaFactory;
+        public CinemaRepositoryImpl(DbSession session, CinemaAbstractFactory cinemaFactory)
         {
             _session = session;
+            _cinemaFactory = cinemaFactory;
         }
         public void AtualizarCinema(Cinema cinema)
         {
@@ -34,30 +38,29 @@ namespace FilmesAPI.Data.Repository
                 transaction : _session.Transaction);
         }
 
-        public Cinema BuscarCinema(int cod_Cinema)
+        public ReadCinemaDto BuscarCinema(int cod_Cinema)
         {
             string sql = 
                 @"SELECT *
                 FROM [Cinema]
                 WHERE Cod_Cinema = @Cod_Cinema;";
 
-            Cinema cinema = _session.Connection.QueryFirstOrDefault<Cinema>(
+            var cinema = _session.Connection.Query<Cinema>(
                 sql : sql,
                 param : new { Cod_Cinema = cod_Cinema });
 
-            return cinema;
+            return null;
         }
 
-        public IEnumerable<Cinema> BuscarCinemas()
+        public IEnumerable<ReadCinemaDto> BuscarCinemas()
         {
-            return _session.Connection.Query<Cinema>(
-                "SELECT * FROM [Cinema];");
+            return null;
         }
 
         public bool CinemaExiste(int cod_Cinema)
         {
             bool status = false;
-            Cinema cinema = BuscarCinema(cod_Cinema);
+            var cinema = BuscarCinema(cod_Cinema);
 
             if (cinema != null) status = true;
 

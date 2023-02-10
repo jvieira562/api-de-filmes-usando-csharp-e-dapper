@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using FilmesAPI.data.DataBaseConnection;
 using FilmesAPI.Data.Repository.Interfaces;
+using FilmesAPI.Dtos.SessaoDtos.Interfaces;
 using FilmesAPI.Models;
 
 namespace FilmesAPI.Data.Repository
@@ -35,7 +36,7 @@ namespace FilmesAPI.Data.Repository
                 transaction: _session.Transaction);
         }
 
-        public Sessao BuscarSessao(int cod_Sessao)
+        public ReadSessaoDto BuscarSessao(int cod_Sessao)
         {
             string sql =
                 @"SELECT * FROM [Sessao]

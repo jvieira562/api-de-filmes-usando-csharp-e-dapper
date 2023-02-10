@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FilmesAPI.data\FilmesAPI.Data.csproj" />
-    <ProjectReference Include="..\FilmesAPI.DTOs\FilmesAPI.Dtos.csproj" />
+    <ProjectReference Include="..\FilmesAPI.Dtos\FilmesAPI.Dtos.csproj" />
   </ItemGroup>
 
 </Project>

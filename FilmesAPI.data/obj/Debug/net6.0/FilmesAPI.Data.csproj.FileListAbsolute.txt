@@ -1,7 +1,9 @@
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Data.deps.json
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Data.dll
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Data.pdb
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Dtos.dll
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Models.dll
+C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Dtos.pdb
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Models.pdb
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\obj\Debug\net6.0\FilmesAPI.Data.csproj.AssemblyReference.cache
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\obj\Debug\net6.0\FilmesAPI.Data.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,5 +15,3 @@ C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.d
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\obj\Debug\net6.0\refint\FilmesAPI.Data.dll
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\obj\Debug\net6.0\FilmesAPI.Data.pdb
 C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\obj\Debug\net6.0\ref\FilmesAPI.Data.dll
-C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Dtos.dll
-C:\Users\conta\Documents\projetos\csharp\Estudos-sobre-APIs-com-.NET\FilmesAPI.data\bin\Debug\net6.0\FilmesAPI.Dtos.pdb

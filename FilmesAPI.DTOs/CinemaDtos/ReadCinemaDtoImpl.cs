@@ -9,7 +9,7 @@ namespace FilmesAPI.Dtos.CinemaDtos
         public string Nome { get; set; }
         public Gerente Gerente { get; set; }
         public Endereco Endereco { get; set; }
-        public List<CinemaSessaoDtoImpl> Sessoes { get; set; } 
+        public List<CinemaSessaoDto> Sessoes { get; set; } 
         public List<Filme> Filmes { get; set; } 
     }
 }
