@@ -19,6 +19,7 @@ namespace FilmesAPI.Data.Factories.SessaoFactory
             };
             return readSesao;
         }
+
         public SessaoCinemaDtoImpl CreateSessaoCinemaDto(Cinema cinema, Endereco endereco, Gerente gerente)
         {
             return new SessaoCinemaDtoImpl
