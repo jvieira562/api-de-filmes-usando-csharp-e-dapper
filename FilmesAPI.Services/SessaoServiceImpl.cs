@@ -2,6 +2,7 @@
 using FilmesAPI.Data.Repository.Interfaces;
 using FilmesAPI.Data.UnitOfWork.Interfaces;
 using FilmesAPI.Dtos.SessaoDtos;
+using FilmesAPI.Dtos.SessaoDtos.Interfaces;
 using FilmesAPI.Models;
 using FilmesAPI.Services.Interfaces;
 
@@ -37,14 +38,14 @@ namespace FilmesAPI.Services
             return mensagem;
         }
 
-        public ReadSessaoDtoImpl BuscarSessao(int cod_Sessao)
+        public ReadSessaoDto BuscarSessao(int cod_Sessao)
         {
             var sessaoDto = _sessaoRepository.BuscarSessao(cod_Sessao);
 
             return sessaoDto;
         }
 
-        public IEnumerable<ReadSessaoDtoImpl> BuscarSessoes()
+        public IEnumerable<ReadSessaoDto> BuscarSessoes()
         {
             IEnumerable<ReadSessaoDtoImpl> sessoesDto = _mapper.Map<List<ReadSessaoDtoImpl>>(_sessaoRepository.BuscarSessoes());
 

@@ -46,7 +46,7 @@ namespace FilmesAPI.Data.Repository
                 sql : sql,
                 param : new { Cod_Sessao = cod_Sessao });
 
-            return sessao;
+            return null;
         }
 
         public IEnumerable<Sessao> BuscarSessoes()
@@ -102,7 +102,7 @@ namespace FilmesAPI.Data.Repository
         public bool SessaoExiste(int cod_Sessao)
         {
             bool status = false;
-            Sessao sessao = BuscarSessao(cod_Sessao);
+            var sessao = BuscarSessao(cod_Sessao);
             if (sessao != null) status = true;
 
             return status;
